@@ -6,13 +6,15 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<BorderPane fx:id="parent" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tanveerzia.contacts.Controller">
 
     <top>
        <MenuBar>
            <Menu text="Contacts">
                <items>
-                   <MenuItem text="Add" />
+                   <MenuItem text="Add" onAction="#addContact"/>
+                   <MenuItem text="Delete" onAction="#deleteContact"/>
+                   <MenuItem text="Edit" onAction="#editContact"/>
                </items>
            </Menu>
        </MenuBar>
